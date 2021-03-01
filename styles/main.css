@@ -1,24 +1,54 @@
+/* the reset selector*/
+* {
+	margin: 0;
+	padding: 0;
+  }
+
 /* the styles for the elements */
 body {
 	font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
+	font-size: 100%;
+	width: 600px;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid #931420;
+	background-color: #fffded;
 }
 
 /* the styles for the header */
+
+header	{
+	padding-top: 1.5em;
+	padding-bottom: 2em;
+	border-bottom: 3px solid #931420;
+	background: linear-gradient( 30deg,#f6bb73, #f6bb73, white,#f6bb73,
+	#f6bb73);
+}
+
 header img {
+	padding-left: 30px;
+	padding-right: 30px;
 	float: left;
+}
+
+main h1	{
+	padding-left: 25px;
+	border: 3px solid #931420;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 5px 5px black;
 }
 
 header h2	{
 	font-size: 170%;
 	color: #800000;
-	text-indent: 30px;
 }
 
 header h3	{
 	font-size: 130%;
 	font-style: italic;
-	text-indent: 30px;
 }
 
 header h3 span {
@@ -27,20 +57,50 @@ header h3 span {
 
 /* the styles for the section */
 main {
-	clear: left;	
+	clear: left;
+	padding-left: 30px;	
+	padding-right: 30px;
 }
 
 main h1 {
 	font-size: 150%;
+	padding-top: .3em;
+	padding-bottom: .3em;
 }
 
 main h2 {
 	font-size: 130%;
-	color:#800000
+	color:#800000;
+	padding-top: .5em;
+	padding-bottom: .25em;
 }
 
 main h3 {
 	font-size: 105%;
+	padding-bottom: .25em;
+}
+
+img	{
+	padding-bottom: 1em;
+}
+
+p	{
+	padding-bottom: .5em;
+}
+
+blockquote	{
+	padding-left: 2em;
+	padding-right: 2em;
+	font-style: italic;
+}
+
+ul	{
+	padding-bottom: .25em;
+	padding-left: 1.25em;
+}
+
+li	{
+	padding-bottom: .35em;
 }
 
 /* mouse over link */
@@ -49,6 +109,12 @@ a:hover {
 }
 
 /* the styles for the footer */
+footer	{
+	background-color: #931420;
+}
 footer p {
 	text-align: center;
+	color: white;
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
