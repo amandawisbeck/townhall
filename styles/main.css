@@ -8,7 +8,7 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 100%;
-	width: 600px;
+	width: 800px;
 	margin-top: 0;
 	margin-bottom: 0;
 	margin-left: auto;
@@ -34,16 +34,41 @@ header img {
 }
 
 main h1	{
-	padding-left: 25px;
-	border: 3px solid #931420;
-	border-radius: 10px;
-	background-color: white;
-	box-shadow: 5px 5px black;
+	font-size: 150%;
+	padding-top: 0.5em;
+	padding-bottom: .25em;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin: 0;
+}
+
+article	{
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	border-top: 2px solid #800000;
+	border-bottom: 2px solid #800000;
+}
+
+article img	{
+	float:right;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	border: 2px solid black;
+}
+
+article h2	{
+	padding-top:0;
 }
 
 header h2	{
 	font-size: 170%;
 	color: #800000;
+}
+
+article h3	{
+	font-size: 105;
+	padding-bottom:.25em;
 }
 
 header h3	{
@@ -58,29 +83,42 @@ header h3 span {
 /* the styles for the section */
 main {
 	clear: left;
-	padding-left: 30px;	
-	padding-right: 30px;
 }
 
-main h1 {
-	font-size: 150%;
-	padding-top: .3em;
-	padding-bottom: .3em;
+aside	{
+	width: 215px;
+	float: right;
+	padding-left: 20px;
+	padding-bottom: 20px;
 }
 
-main h2 {
+aside h2 {
 	font-size: 130%;
 	color:#800000;
 	padding-top: .5em;
 	padding-bottom: .25em;
 }
 
-main h3 {
+aside h3 {
 	font-size: 105%;
 	padding-bottom: .25em;
 }
 
-img	{
+section	{
+	width: 525px;
+	float: right;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+section h2 {
+	font-size: 130%;
+	color:#800000;
+	padding-top: .5em;
+	padding-bottom: .25em;
+}
+
+aside img	{
 	padding-bottom: 1em;
 }
 
@@ -111,6 +149,7 @@ a:hover {
 /* the styles for the footer */
 footer	{
 	background-color: #931420;
+	clear:both;
 }
 footer p {
 	text-align: center;
