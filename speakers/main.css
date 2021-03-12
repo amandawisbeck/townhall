@@ -42,9 +42,33 @@ main h1	{
 	margin: 0;
 }
 
+article	{
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	border-top: 2px solid #800000;
+	border-bottom: 2px solid #800000;
+}
+
+article img	{
+	float:right;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	border: 2px solid black;
+}
+
+article h2	{
+	padding-top:0;
+}
+
 header h2	{
 	font-size: 170%;
 	color: #800000;
+}
+
+article h3	{
+	font-size: 105;
+	padding-bottom:.25em;
 }
 
 header h3	{
@@ -72,7 +96,7 @@ header h3 span {
   
 #nav_menu li a	{
 	display: block;
-	width: 168px;
+	width: 128px;
 	text-align: center;
 	padding: 1em;
 	background-color: #800000;
@@ -109,28 +133,6 @@ main {
 	clear: left;
 }
 
-article	{
-	padding-top: 0.5em;
-	padding-bottom: 0.5em;
-}
-
-article img	{
-	float:right;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	margin-left: 10px;
-	border: 2px solid black;
-}
-
-article h2	{
-	padding-top:0;
-}
-
-article h3	{
-	font-size: 105;
-	padding-bottom:.25em;
-}
-
 aside	{
 	width: 215px;
 	float: right;
@@ -157,13 +159,9 @@ section	{
 	padding-right: 20px;
 }
 
-section h1	{
-	color: #800000;
-}
-
 section h2 {
 	font-size: 130%;
-	color:black;
+	color:#800000;
 	padding-top: .5em;
 	padding-bottom: .25em;
 }
@@ -185,6 +183,7 @@ blockquote	{
 ul	{
 	padding-bottom: .25em;
 	padding-left: 1.25em;
+	list-style: circle;
 }
 
 li	{
