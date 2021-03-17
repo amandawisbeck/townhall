@@ -8,7 +8,8 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 100%;
-	width: 800px;
+	width: 98%;
+	max-width: 960px;
 	margin-top: 0;
 	margin-bottom: 0;
 	margin-left: auto;
@@ -28,8 +29,8 @@ header	{
 }
 
 header img {
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 2em;
+	padding-right: 2em;
 	float: left;
 }
 
@@ -53,8 +54,10 @@ article img	{
 	float:right;
 	margin-top: 10px;
 	margin-bottom: 5px;
-	margin-left: 10px;
+	margin-left: 1em;
 	border: 2px solid black;
+	max-width: 40%;
+	min-width: 150px;
 }
 
 article h2	{
@@ -96,7 +99,7 @@ header h3 span {
   
 #nav_menu li a	{
 	display: block;
-	width: 128px;
+	width: 10em;
 	text-align: center;
 	padding: 1em;
 	background-color: #800000;
@@ -116,6 +119,7 @@ header h3 span {
 
 #nav_menu ul ul li	{
 	float: none;
+	width: 100%;
 }
 
 #nav_menu ul li:hover > ul {
@@ -134,9 +138,9 @@ main {
 }
 
 aside	{
-	width: 215px;
+	width: 20em;
 	float: right;
-	padding-left: 20px;
+	padding-left: 2em;
 	padding-bottom: 20px;
 }
 
@@ -153,10 +157,9 @@ aside h3 {
 }
 
 section	{
-	width: 525px;
+	width: 35em;
 	float: right;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-right: .5em;
 }
 
 section h2 {
@@ -206,3 +209,78 @@ footer p {
 	padding-top: 1em;
 	padding-bottom: 1em;
 }
+
+#mobilemenu {
+	display: none;
+  }
+  
+  @media only screen and (max-width: 959px) {
+	section  {
+	  float: none;
+	  width: 100%;
+	}
+	section h1 {
+		font-size: 135%;
+	}
+	section h2	{
+		font-size: 120%;
+	}
+	aside h2	{
+		font-size: 120%;
+	}
+	aside  {
+	  width: 100%;
+	}
+	article img {
+		max-width: 10%;
+	}
+	
+	#mobilemenu {
+	  display: block;
+	  
+	}
+
+	#nav_menu {
+	  display: none;
+	  }
+
+	}
+
+	  @media only screen and (max-width: 767px) {
+		header img	{
+			float: none;
+			
+		}
+		header {
+			text-align: center;
+		}
+		div {
+			column-count: 2;
+		}
+		#mobilemenu {
+		  display: block; 
+		}
+		#nav_menu {
+		  display: none;
+		  }
+		section {
+			float:none;
+			width: 90%
+		}
+		aside {
+			float: none;
+			padding-left: 5%;
+			padding-right: 5%;
+			width: 90%
+		}
+
+		article img {
+			max-width: 30%;
+		}
+
+		}
+		@media only screen and (max-width: 479px) {
+			header, head, body, footer {
+			font-size: 90%;
+		}
+		}
