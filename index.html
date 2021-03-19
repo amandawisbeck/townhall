@@ -1,16 +1,45 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
 	<!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
 	<meta charset="utf-8">
+
 	<!--Viewport Tag-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>San Joaquin Valley Town Hall</title>
 	<link rel="shortcut icon" href="images/favicon.ico">
+
+	 <!-- Bootstrap -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<!-- Normalize CSS -->
 	<link rel="stylesheet" href="styles/normalize.css">
+	<!-- Main CSS -->
 	<link rel="stylesheet" href="styles/main.css">
-	 <!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+
+	<!-- SlickNav Links and Javascript-->
+	<link rel="stylesheet" href="styles/slicknav.css">
+    	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    	<script src="js/jquery.slicknav.min.js"></script>
+		<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+    	});
+    	</script>
+</head>
 	<style>
 	html    {
 		background-color:white;
@@ -27,6 +56,7 @@
 	</header>
 
 	<!--Nav Menu-->
+	<nav id="mobilemenu"></nav>
 	<nav id="nav_menu"> <ul>
 		<li><a href="index.html" class="current">Home</a></li> 
 		<li><a href="speakers.html">Speakers</a></li>
