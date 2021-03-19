@@ -99,7 +99,7 @@ header h3 span {
   
 #nav_menu li a	{
 	display: block;
-	width: 10em;
+	width: 11.925em;
 	text-align: center;
 	padding: 1em;
 	background-color: #800000;
@@ -214,7 +214,7 @@ footer p {
 	display: none;
   }
   
-  @media only screen and (max-width: 959px) {
+  @media only screen and (max-width: 980px) {
 	section  {
 	  float: none;
 	  width: 100%;
@@ -257,12 +257,7 @@ footer p {
 		div {
 			column-count: 2;
 		}
-		#mobilemenu {
-		  display: block; 
-		}
-		#nav_menu {
-		  display: none;
-		  }
+	
 		section {
 			float:none;
 			width: 90%
@@ -277,10 +272,56 @@ footer p {
 		article img {
 			max-width: 30%;
 		}
-
+		#mobilemenu {
+			display: block;
+		  }
+		  #nav_menu {
+			display: none;
+			}
 		}
 		@media only screen and (max-width: 479px) {
 			header, head, body, footer {
 			font-size: 90%;
 		}
+		header img	{
+			float: none;
+			
 		}
+		header {
+			text-align: center;
+		}
+		div {
+			column-count: 2;
+		}
+	
+		section {
+			float:none;
+			width: 90%
+		}
+		aside {
+			float: none;
+			padding-left: 5%;
+			padding-right: 5%;
+			width: 90%
+		}
+
+		article img {
+			max-width: 30%;
+		}
+		#mobilemenu {
+			display: block;
+		  }
+		  #nav_menu {
+			display: none;
+			}
+		}
+
+		.slicknav_menu  {
+			background-color: #931420 !important;
+		  }
+		  .slicknav_menu .slicknav_icon {
+			background-color: #931420 !important;
+		  }
+		  .slicknav_btn {
+			background-color: #931420 !important;
+		  }
