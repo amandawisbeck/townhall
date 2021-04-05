@@ -74,6 +74,19 @@
 		</article>
 	</section>
 	<aside>
+		<input type="button" id="printButton" value="Print the Page">
+		<script src="../../../book_examples/ch19/05_print_page/printPage.js"></script>
+		<script>
+			var $ = function(printButton) {
+				return document.getElementById(printButton);
+			}
+			var printPage = function() {
+				window.print(); 
+			}
+			window.onload = function() {
+				$("printButton").onclick = printPage;
+			}
+			</script>
 		<h2>Guest Speakers</h2>
 		
 		<h3>October<br><a href="../speakers/toobin.html">Jeffrey Toobin</a></h3>
