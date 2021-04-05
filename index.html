@@ -115,8 +115,13 @@
 	</div>
 	</aside>
 	</main>
-	<footer>
-		<p>&copy; 2018, San Joaquin Valley Town Hall, Fresno, CA 93755</p>
+	<footer>		
+		<p>&copy; <span id="thisyear"></span> San Joaquin Valley Town Hall, Fresno, CA 93755</p>
 	</footer>
+	<script>
+			var d = new Date();
+			var n = d.getFullYear();
+			document.getElementById("thisyear").innerHTML = n;
+	</script>
 </body>
 </html>
